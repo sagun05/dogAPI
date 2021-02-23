@@ -60,6 +60,8 @@ public class DogBreedController implements IDogBreedController {
 				log.error("MISSING_PARAMETERS_ERROR in voteDogImage API:");
 				return Response.status(HttpURLConnection.HTTP_BAD_REQUEST).entity(ErrorCodes.MISSING_PARAMETERS_ERROR).type(MediaType.APPLICATION_JSON).build();
 			}
+			//we need to add here  validation
+			
 			dogBreedService.updateDogBreed(dogImage);
 		}catch(Exception e) {
 			log.error("Internal Application Error in voteDogBreed API:", e.getMessage());

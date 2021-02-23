@@ -25,7 +25,7 @@ import org.springframework.context.annotation.Bean;
 public class PetLoader implements InitializingBean {
 
     private static final Logger LOGGER = getLogger(PetLoader.class);
-
+//first change
     // Resources to the different files we need to load.
     @Value("classpath:data/labrador.txt")
     private Resource labradors;
